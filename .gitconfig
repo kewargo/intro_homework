@@ -1,0 +1,9 @@
+[user]
+    name = Kerry Wargo
+
+    email = kewargo@verizon.net
+[core]
+    askpass = /bin/echo
+    editor = nano
+[color]
+    ui = true
