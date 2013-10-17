@@ -8,7 +8,7 @@ document.write('<ul class="list-group">');
 
 for(var i=0; i < tasks.length; i++) {
 
-    document.write('<li class="list-group-item"><span class="glyphicon glyphicon-637-expand.png"></span>   ' + to_dos[i] + '</li>'); 
+    document.write('<li class="list-group-item"><span class="glyphicon glyphicon-637-expand.png"></span>'</li>'); 
 }    
 
 document.write('</ul>');
