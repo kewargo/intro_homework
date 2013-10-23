@@ -6,24 +6,31 @@ var tasks = [{taskDesc: 'Change oil in the Ram 2500', completed: false},
 {taskDesc: 'Bleed air out of hot water radiators', completed: true}, 
 {taskDesc: 'Change water filter in refrigerator', completed: false}];
 
-    for(var i = 0; i < tasks.length; i++)  
+document.write('<ul class="list-group">');
 
-        var name;
+    for(var i = 0; i < tasks.length; i++) 
+
+    var name;
+
         for(name in tasks) {
-            
             if(typeof tasks[name] == 'object') {
+            /*   document.write('Task ' + (name) + ':'); */
             
                 var subName;
                    for(subName in tasks[name]) {
                         document.write('<li class="list-group-item"><span class="glyphicon glyphicon-expand"></span> ' + tasks[name][subName] + '</li>');
-                        
                     } // end for(subName in tasks)
                 
             } else {
-                document.write(name + ": " + tasks[name]); 
+            document.write(name + ": " + tasks[name]);
             
         } // end for(name in tasks)
       
     } // end for(var i)
+
+
+/* {
+document.write('<li class="list-group-item"><span class="glyphicon glyphicon-expand"></span> ' + tasks[i] + '</li>'); 
+} */
 
 document.write('</ul>');
